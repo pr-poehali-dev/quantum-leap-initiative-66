@@ -63,9 +63,10 @@ export default function Navbar({ isBannerVisible = true }: NavbarProps) {
               xmlns="http://www.w3.org/2000/svg"
               className="mr-2"
             >
-              <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#FFFFFF" stroke="#FFFFFF" strokeWidth="1" />
-              <path d="M2 17L12 22L22 17" stroke="#FFFFFF" strokeWidth="1" />
-              <path d="M2 12L12 17L22 12" stroke="#FFFFFF" strokeWidth="1" />
+              <rect x="3" y="4" width="18" height="16" rx="2" stroke="#FFFFFF" strokeWidth="1.5" />
+              <line x1="7" y1="9" x2="17" y2="9" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" />
+              <line x1="7" y1="13" x2="14" y2="13" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" />
+              <line x1="7" y1="17" x2="11" y2="17" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" />
             </svg>
             <span
               className="logo-text"
@@ -80,12 +81,12 @@ export default function Navbar({ isBannerVisible = true }: NavbarProps) {
                 height: "auto",
               }}
             >
-              Rewind
+              РезюмеПро
             </span>
           </div>
 
           <div className="hidden md:flex items-center gap-3">
-            <a href="https://tally.so/r/n0l7BB" target="_blank" rel="noopener noreferrer">
+            <a href="#faq">
               <Button
                 className="bg-transparent hover:bg-white/10 border border-white/30 rounded-lg"
                 style={{
@@ -99,7 +100,7 @@ export default function Navbar({ isBannerVisible = true }: NavbarProps) {
                   height: "48px",
                 }}
               >
-                ОТЗЫВ
+                FAQ
               </Button>
             </a>
             <Button
@@ -117,8 +118,7 @@ export default function Navbar({ isBannerVisible = true }: NavbarProps) {
               }}
               onClick={() => setIsInstallModalOpen(true)}
             >
-              <Download className="mr-2 h-4 w-4 stroke-[2.5px]" />
-              СКАЧАТЬ
+              ЗАКАЗАТЬ РЕЗЮМЕ
             </Button>
           </div>
 
